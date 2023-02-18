@@ -8,14 +8,24 @@
   
   </head>
   <body>
-    <div class="container" style="max-width:720px;margin: 0 auto;">
-      <h1 class="text-center mt-4 mb-4"> {{company_name}} Careers</h1>
-    <img style="width:100%;height:360px;object-fit:cover;" src='https://career-website.jhn840530.repl.co/static/career_pic.jpg' height='320'>
+    {% include 'navbar.html'%}
+    <img class='img-fluid' style="width:100%;height:360px;object-fit:cover;" src='/static/career_pic.jpg' height='320'>
+    <div class="container" style="max-width:960px;margin: 0 auto;">
+      
+    
     <h2 class="text-center mt-4 mb-4">About {{company_name}}</h2>
-    <p >Lorem ipsum dolor sit amet. Est deserunt voluptatem ut exercitationem nihil id velit amet ex consequatur veritatis eum laudantium debitis. Aut incidunt enim rem sunt cumque aut consequuntur aliquam sed quisquam omnis?
+    <div class='row'>
+      <div class='col-md-7'>
+      <p >Lorem ipsum dolor sit amet. Est deserunt voluptatem ut exercitationem nihil id velit amet ex consequatur veritatis eum laudantium debitis. Aut incidunt enim rem sunt cumque aut consequuntur aliquam sed quisquam omnis?
 
 Id alias unde nam obcaecati velit aut cupiditate temporibus est illum optio. Et impedit fuga eos placeat possimus aut magnam molestiae. Aut fugiat maxime sed nulla beatae est nihil quasi sed corporis nobis qui voluptatum neque et molestiae nesciunt et deserunt vitae. Non magnam facere ut quia quis ut eius consectetur et quia dignissimos aut facere voluptatem qui voluptatem repellat.
-</p>
+      </p>
+      </div>
+      <div class='d-none d-md-block col-md-5'>
+      <img src="/static/people.jpg" style='height:250px;border-radius:4px'>
+      </div>
+    </div>
+    
     <h2 class="text-center mt-4 mb-4">Open Positions</h2>
       <div>
         {% for job in jobs %}
@@ -25,9 +35,11 @@ Id alias unde nam obcaecati velit aut cupiditate temporibus est illum optio. Et 
     
     <p>fake it, until you make it</p>
     <div style="text-align:center;">
-      <button class="btn btn-primary btn-lg">Contact us</button>
-      <p class="mt-4">Copyright 2023, Alex</p>
+      <a class="btn btn-primary btn-lg" href='mailto:jhn840530@gmail.com?subject=hello'>Contact us</a>
+
     </div>
+    {% include 'footer.html' %}
+    
     
     </div>
     
