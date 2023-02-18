@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Application Submitted</title>
+    {% include 'boostramp.html' %}
+    
+  </head>
+  <body>
+    {% include 'navbar.html'%}
+    <div class="container" style="max-width:960px;margin: 0 auto;">    
+      <h2 class="text-center mt-4 mb-4"> {{company_name}} Career</h2>
+      <p>Your application for the of <b>{{data.job_desired}}</b> has been submitted, we'll contact with you as soon as possible!</p>
+      <b>Position Desired</b>
+      <div class='mb-2'>{{data.job_desired}} {{data.id}}</div>
+      <b>Name</b>
+      <div class='mb-2'>{{data.name}}</div>
+      <b>E-mail</b>
+      <div class='mb-2'>{{data.email}}</div>
+      <b>Education</b>
+      <div class='mb-2'>{{data.education}}</div>
+      <b>Work Experience</b>
+      <div class='mb-2'>{{data.work_experience}}</div>
+      <b>Resume</b>
+      <div class='mb-2'>{{data.resume_url}}</div>
+      
+      
+      {% include 'footer.html' %}
+      
+    </div>
+    
+  </body>
+</html>

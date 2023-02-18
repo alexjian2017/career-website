@@ -1,0 +1,28 @@
+<h4> Application Form </h4>
+<form action='/job/{{job.id}}/apply' method='post'>
+
+    <input type='hidden' name='job_desired' value='{{job.title}}' >
+  
+  <div class='mb-2'>
+    <label>Name</label><br>
+    <input required type='text' name='name' placeholder='Enter your Name'>
+  </div>
+  <div class='mb-2'>
+    <label>E-mail</label><br>
+    <input required type='email' name='email' placeholder='Enter your E-mail'>
+  </div>
+  <div class='mb-2'>
+    <label>Education</label><br>
+    <textarea name='education' placeholder='Enter your Education'></textarea>
+  </div>
+  <div class='mb-2'>
+    <label>Work Experience</label><br>
+    <textarea name='work_experience' placeholder='Enter your Work Experience'></textarea>
+  </div>
+  <div class='mb-2'>
+    <label>Resume</label><br>
+    <input type='text' name='resume_url' placeholder='Enter your Resume'>
+  </div>
+
+  <input type='submit' value='Submit'>
+</form>

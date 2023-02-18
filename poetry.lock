@@ -78,6 +78,18 @@ optional = false
 python-versions = ">=3.7"
 
 [[package]]
+name = "pymysql"
+version = "1.0.2"
+description = "Pure Python MySQL Driver"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+ed25519 = ["PyNaCl (>=1.4.0)"]
+rsa = ["cryptography"]
+
+[[package]]
 name = "sqlalchemy"
 version = "2.0.4"
 description = "Database Abstraction Library"
@@ -137,7 +149,7 @@ watchdog = ["watchdog"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "5f5c48c452a37992595383d83b403e15b5ac27c3073be0fed4f51d6d57a0fa69"
+content-hash = "e851c764295df0b3040ab2155645d221eb918f678f7f994e96d9cbc3f0d6bb75"
 
 [metadata.files]
 click = []
@@ -147,6 +159,7 @@ greenlet = []
 itsdangerous = []
 jinja2 = []
 markupsafe = []
+pymysql = []
 sqlalchemy = []
 typing-extensions = []
 werkzeug = []
